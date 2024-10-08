@@ -12,11 +12,4 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
-let midiNote = 64;
-if (midiNote < 64) {
-  console.log("MIDI note is smaller than 64.");
-} else if (midiNote > 64) {
-  console.log("MIDI note is greater than 64.");
-} else {
-  console.log("MIDI note is equal to 64.");
-}
+
