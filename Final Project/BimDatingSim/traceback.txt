@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 148, in script
+    show bimcheer shadow
+Exception: Image 'bimcheer' does not accept attributes 'shadow'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 148, in script
+    show bimcheer shadow
+  File "/Users/gavinsexton/Documents/renpy-8.3.3-sdk/renpy/ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/gavinsexton/Documents/renpy-8.3.3-sdk/renpy/ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "/Users/gavinsexton/Documents/renpy-8.3.3-sdk/renpy/exports/displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Users/gavinsexton/Documents/renpy-8.3.3-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "/Users/gavinsexton/Documents/renpy-8.3.3-sdk/renpy/display/displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "/Users/gavinsexton/Documents/renpy-8.3.3-sdk/renpy/display/displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'bimcheer' does not accept attributes 'shadow'.
+
+macOS-14.5-arm64-arm-64bit arm64
+Ren'Py 8.3.3.24111502
+BimDatingSim 1.0
+Mon Dec  9 18:46:37 2024
